@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		672216E0233F87DE008ECF56 /* LinkedList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LinkedList.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		67F309BC21FC520D0072CB84 /* DataStructureInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructureInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F309BF21FC520D0072CB84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67F309C121FC520D0072CB84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		672216E1233F87F7008ECF56 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				672216E0233F87DE008ECF56 /* LinkedList.playground */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
 		67F309B321FC520D0072CB84 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +64,7 @@
 		67F309BE21FC520D0072CB84 /* DataStructureInSwift */ = {
 			isa = PBXGroup;
 			children = (
+				672216E1233F87F7008ECF56 /* LinkedList */,
 				67F309D121FC9C6D0072CB84 /* Stack */,
 				67F309BF21FC520D0072CB84 /* AppDelegate.swift */,
 				67F309C121FC520D0072CB84 /* ViewController.swift */,
