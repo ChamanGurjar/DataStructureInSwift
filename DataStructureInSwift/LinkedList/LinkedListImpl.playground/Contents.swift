@@ -68,6 +68,16 @@ public struct LinkedList<Value> {
         }
     }
     
+    mutating func append(_ value: Value) {
+        guard !isEmpty else {
+            push(value)
+            return
+        }
+        
+        tail!.next = Node(value: value)
+        tail = tail!.next
+    }
+    
 }
 
 extension LinkedList: CustomStringConvertible {
@@ -83,7 +93,7 @@ extension LinkedList: CustomStringConvertible {
 
 // Linked List Impl
 
-private func linkedListImpl() {
+private func linkedListPushImpl() {
     var list = LinkedList<Int>()
     list.push(3)
     list.push(2)
@@ -92,4 +102,16 @@ private func linkedListImpl() {
     print(list)
 }
 
-linkedListImpl()
+// linkedListPushImpl()
+
+private func linkedListAppendImpl() {
+    var list = LinkedList<Int>()
+    list.append(1)
+    list.append(2)
+    list.append(3)
+    
+    print("Append impl")
+    print(list)
+}
+
+linkedListAppendImpl()
