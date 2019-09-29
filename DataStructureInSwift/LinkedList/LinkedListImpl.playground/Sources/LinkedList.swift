@@ -18,6 +18,13 @@ public struct LinkedList<Value> {
         return head == nil
     }
     
+    public mutating func push(_ value: Value) {
+        head = Node(value: value, next: head)
+        if tail == nil {
+            tail = head
+        }
+    }
+    
 }
 
 extension LinkedList: CustomStringConvertible {
