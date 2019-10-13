@@ -108,7 +108,7 @@ public struct LinkedList<Value> {
         return node.next!
     }
     
-     // 30 Sep 2019 - Monday
+    // 30 Sep 2019 - Monday
     // Pop from the linked list
     @discardableResult
     mutating func pop() -> Value? {
@@ -120,6 +120,43 @@ public struct LinkedList<Value> {
         }
         return head?.value
     }
+    
+    // 13 Oct 2019 - Sunday
+    @discardableResult
+    mutating func removeFromLast() -> Value? {
+        guard let head = head else {
+            return nil
+        }
+        
+        guard head.next != nil else {
+            return pop()
+        }
+        
+        var prev = head
+        var current = head
+        
+        while let next = current.next {
+            prev = current
+            current = next
+        }
+        
+        prev.next = nil
+        tail = prev
+        return current.value
+    }
+    
+    // 13 Oct 2019 - Sunday
+    @discardableResult
+    mutating func remove(after node: Node<Value>) -> Value? {
+        defer {
+            if node.next === tail {
+                tail = node
+            }
+            node.next = node.next?.next
+        }
+        return node.next?.value
+    }
+    
 }
 
 extension LinkedList: CustomStringConvertible {
@@ -175,4 +212,38 @@ private func linkedListInsertImpl() {
     print("List after insertion:  \(list)")
 }
 
-linkedListInsertImpl()
+//linkedListInsertImpl()
+
+private func linkedListRemoveFromLastImpl() {
+    var list = LinkedList<Int>()
+    list.push(3)
+    list.push(2)
+    list.push(1)
+    
+    print("Before removing the last node from the list : \(list) \n")
+    
+    let removedValue = list.removeFromLast()
+    
+    print("After removing the last node from the list : \(list) \n")
+    print("Removed value : " + String(describing: removedValue))
+}
+
+// linkedListRemoveFromLastImpl()
+
+private func linkedListRemoveAfterNodeImpl() {
+    var list = LinkedList<Int>()
+    list.push(3)
+    list.push(2)
+    list.push(1)
+    
+    print("Before removing the particular node from the list : \(list) \n")
+    
+    let node = list.node(at: 0)!
+    
+    let removedValue = list.remove(after: node)
+    
+    print("After removing the particular node from the list : \(list) \n")
+    print("Removed value : " + String(describing: removedValue))
+}
+
+linkedListRemoveAfterNodeImpl()
