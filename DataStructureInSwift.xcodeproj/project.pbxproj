@@ -16,6 +16,7 @@
 
 /* Begin PBXFileReference section */
 		672216E0233F87DE008ECF56 /* LinkedListImpl.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LinkedListImpl.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		67AC71AB2352C852004CC55A /* BinarySearch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinarySearch.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		67F309BC21FC520D0072CB84 /* DataStructureInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructureInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F309BF21FC520D0072CB84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67F309C121FC520D0072CB84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +46,30 @@
 			path = LinkedList;
 			sourceTree = "<group>";
 		};
+		67AC71A82352C809004CC55A /* Searching */ = {
+			isa = PBXGroup;
+			children = (
+				67AC71A92352C817004CC55A /* BinarySearch */,
+			);
+			path = Searching;
+			sourceTree = "<group>";
+		};
+		67AC71A92352C817004CC55A /* BinarySearch */ = {
+			isa = PBXGroup;
+			children = (
+				67AC71AA2352C828004CC55A /* 13OCT2019 */,
+			);
+			path = BinarySearch;
+			sourceTree = "<group>";
+		};
+		67AC71AA2352C828004CC55A /* 13OCT2019 */ = {
+			isa = PBXGroup;
+			children = (
+				67AC71AB2352C852004CC55A /* BinarySearch.playground */,
+			);
+			path = 13OCT2019;
+			sourceTree = "<group>";
+		};
 		67F309B321FC520D0072CB84 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +89,7 @@
 		67F309BE21FC520D0072CB84 /* DataStructureInSwift */ = {
 			isa = PBXGroup;
 			children = (
+				67AC71A82352C809004CC55A /* Searching */,
 				672216E1233F87F7008ECF56 /* LinkedList */,
 				67F309D121FC9C6D0072CB84 /* Stack */,
 				67F309BF21FC520D0072CB84 /* AppDelegate.swift */,
