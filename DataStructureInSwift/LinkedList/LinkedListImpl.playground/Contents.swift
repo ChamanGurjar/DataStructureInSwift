@@ -108,6 +108,18 @@ public struct LinkedList<Value> {
         return node.next!
     }
     
+     // 30 Sep 2019 - Monday
+    // Pop from the linked list
+    @discardableResult
+    mutating func pop() -> Value? {
+        defer {
+            head = head?.next
+            if isEmpty {
+                tail = nil
+            }
+        }
+        return head?.value
+    }
 }
 
 extension LinkedList: CustomStringConvertible {
