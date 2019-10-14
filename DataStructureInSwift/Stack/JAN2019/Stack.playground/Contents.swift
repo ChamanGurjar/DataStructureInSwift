@@ -1,5 +1,12 @@
-import UIKit
+//
+//  Stack.swift
+//  DataStructureInSwift
+//
+//  Created by Chaman Gurjar on 26/01/19.
+//  Copyright © 2019 Chaman Gurjar. All rights reserved.
+//
 
+import UIKit
 
 class Node<T> {
     
@@ -49,4 +56,3 @@ stackWithString.pop()
 stackWithString.pop()
 stackWithString.pop()
 stackWithString.pop()
-

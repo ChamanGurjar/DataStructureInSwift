@@ -21,6 +21,8 @@
 		6784FC11235347C7008582BF /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		6784FC132353482A008582BF /* LinkedList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LinkedList.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		67AC71AB2352C852004CC55A /* BinarySearch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinarySearch.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		67B7745A235438A2007347FE /* Stack.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Stack.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		67B7745D235439A9007347FE /* Stack.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Stack.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		67F309BC21FC520D0072CB84 /* DataStructureInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructureInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F309BF21FC520D0072CB84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67F309C121FC520D0072CB84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,7 +30,6 @@
 		67F309C621FC52110072CB84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67F309C921FC52110072CB84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67F309CB21FC52110072CB84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67F309D221FC9C980072CB84 /* Stack26Jan19.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Stack26Jan19.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,22 @@
 			path = 13OCT2019;
 			sourceTree = "<group>";
 		};
+		67B7745923543888007347FE /* OCT2019 */ = {
+			isa = PBXGroup;
+			children = (
+				67B7745A235438A2007347FE /* Stack.playground */,
+			);
+			path = OCT2019;
+			sourceTree = "<group>";
+		};
+		67B7745C23543999007347FE /* JAN2019 */ = {
+			isa = PBXGroup;
+			children = (
+				67B7745D235439A9007347FE /* Stack.playground */,
+			);
+			path = JAN2019;
+			sourceTree = "<group>";
+		};
 		67F309B321FC520D0072CB84 = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +136,8 @@
 		67F309D121FC9C6D0072CB84 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
-				67F309D221FC9C980072CB84 /* Stack26Jan19.playground */,
+				67B7745C23543999007347FE /* JAN2019 */,
+				67B7745923543888007347FE /* OCT2019 */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
