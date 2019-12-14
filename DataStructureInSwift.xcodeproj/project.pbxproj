@@ -21,6 +21,7 @@
 		6784FC11235347C7008582BF /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		6784FC132353482A008582BF /* LinkedList.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LinkedList.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		67AC71AB2352C852004CC55A /* BinarySearch.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = BinarySearch.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		67B31A5823A511C9005A0217 /* InsertionSort.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = InsertionSort.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		67F309BC21FC520D0072CB84 /* DataStructureInSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructureInSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F309BF21FC520D0072CB84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67F309C121FC520D0072CB84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +85,30 @@
 			path = 13OCT2019;
 			sourceTree = "<group>";
 		};
+		67B31A5523A51186005A0217 /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				67B31A5623A51193005A0217 /* InsertionSort */,
+			);
+			path = Sorting;
+			sourceTree = "<group>";
+		};
+		67B31A5623A51193005A0217 /* InsertionSort */ = {
+			isa = PBXGroup;
+			children = (
+				67B31A5723A511AB005A0217 /* 14DEC2019 */,
+			);
+			path = InsertionSort;
+			sourceTree = "<group>";
+		};
+		67B31A5723A511AB005A0217 /* 14DEC2019 */ = {
+			isa = PBXGroup;
+			children = (
+				67B31A5823A511C9005A0217 /* InsertionSort.playground */,
+			);
+			path = 14DEC2019;
+			sourceTree = "<group>";
+		};
 		67F309B321FC520D0072CB84 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +128,7 @@
 		67F309BE21FC520D0072CB84 /* DataStructureInSwift */ = {
 			isa = PBXGroup;
 			children = (
+				67B31A5523A51186005A0217 /* Sorting */,
 				67AC71A82352C809004CC55A /* Searching */,
 				672216E1233F87F7008ECF56 /* LinkedList */,
 				67F309D121FC9C6D0072CB84 /* Stack */,
